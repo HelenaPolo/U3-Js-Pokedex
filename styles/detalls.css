@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/fons_blanc.jpg");
+    background-repeat: repeat;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
+    display:grid;
+  }
+  
+  h1 {
+    color: whitesmoke;
+    background-color: rgb(47, 47, 57);
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+    text-transform: uppercase;
+    width: 100%;
+
+  }
+  #pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 60%;
+    height: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  img{
+    height: 15rem;
+    width: 15rem;
+    background-color: rgb(234, 230, 233);
+    border-radius: 10px;
+    position: relative;
+    margin: 1rem;
+    margin-bottom: 3rem;
+  }
+  ul{
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li{
+    margin: 1.5rem;
+    list-style-type: none;
+    font-size: 25px;
+    color: rgb(47, 47, 57);
+    color: whitesmoke;
+  }
+  header{
+  display: flex;
+  justify-content: space-between;
+  padding: .2rem 1rem .2rem 1rem;
+  color: #eeee;
+  background-color: rgb(47, 47, 57);
+}
+.detalls{
+  background-color: rgb(107, 153, 167);
+  color: red;
+  height: 30%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 3px solid #eeee;
+}
+@media only screen and (max-width: 900px) {
+  h1{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .pokemon-container{
+    height: 80%;
+  }
+  .detalls{
+    width: 60%;
+    right: auto;
+    left: auto;
+    position: absolute;
+  }
+  li{
+    margin-left: 1rem;
+  }
+}

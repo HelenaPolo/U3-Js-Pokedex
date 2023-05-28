@@ -4,15 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/detalls.css">
         <link rel="stylesheet" href="styles/darklight.css">
-        <script src="https:/kit.fontawesome.com/12f3f503ec.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-        <script defer src="modules/main.js"></script>
+        <script src="modules/details.js" type="module"></script>
         <script defer src="modules/darklight.js"></script>
-        <title>Pokedex</title>
+        <title>Pokemon Details</title>
     </head>
-    <body class="light" id="body">
+    <body class="light" id="body"> 
         <header class="topbar">
             <div class="controls">
                 <label for="radioDark">Dark</label>
@@ -20,15 +18,7 @@
                 <label for="radioLight">Light</label>
                 <input type="radio" name="theme" id="radioLight" value="light" checked>
             </div>
-            <input type="search" id="searchInput" placeholder="Busca...">
         </header>
-        <h1 class="title">Pokedex</h1>
-        <div class="container">
-            <button id="surprise" type="button" >
-                <i class="fa-solid fa-rotate"></i>
-                Canvia'ls!
-            </button>
-            <div id="pokemons-container"></div>
-        </div>
+        <div id="pokemon-container"></div>     
     </body>
 </html>
